@@ -1,0 +1,175 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: kicker
+    elementType: text
+    bounds: [64, 36, 300, 20]
+    content:
+      style: "$kicker"
+      align: [left, middle]
+      wrap: false
+      text: TOOL
+  - elementId: title
+    elementType: text
+    bounds: [64, 60, 700, 44]
+    content:
+      style: "$title"
+      align: [left, middle]
+      wrap: false
+      text: 认识我们的工具：Trae IDE
+  - elementId: title-line
+    elementType: shape
+    bounds: [64, 112, 832, 1]
+    shapeName: rect
+    fill: {type: solid, color: "$line"}
+  - elementId: ide-frame
+    elementType: shape
+    bounds: [64, 140, 540, 330]
+    shapeName: roundRect
+    adjustments: [3000]
+    fill: {type: solid, color: "$dark"}
+    border: {style: solid, width: 1, color: "$line"}
+  - elementId: ide-titlebar
+    elementType: shape
+    bounds: [64, 140, 540, 30]
+    shapeName: rect
+    fill: {type: solid, color: "$panel2"}
+  - elementId: ide-dot1
+    elementType: shape
+    bounds: [78, 151, 9, 9]
+    shapeName: ellipse
+    fill: {type: solid, color: "#E05C5C"}
+  - elementId: ide-dot2
+    elementType: shape
+    bounds: [94, 151, 9, 9]
+    shapeName: ellipse
+    fill: {type: solid, color: "#E0B25C"}
+  - elementId: ide-dot3
+    elementType: shape
+    bounds: [110, 151, 9, 9]
+    shapeName: ellipse
+    fill: {type: solid, color: "#6CBF6C"}
+  - elementId: ide-title
+    elementType: text
+    bounds: [130, 140, 300, 30]
+    content:
+      fontSize: 12
+      color: "$muted"
+      fontFamily: 微软雅黑
+      align: [left, middle]
+      wrap: false
+      text: Trae IDE
+  - elementId: zone-editor
+    elementType: shape
+    bounds: [76, 182, 316, 274]
+    shapeName: rect
+    fill: {type: solid, color: "#101722"}
+    border: {style: solid, width: 1, color: "$cyan"}
+  - elementId: zone-editor-label
+    elementType: text
+    bounds: [90, 194, 290, 22]
+    content:
+      fontSize: 13
+      color: "$cyan"
+      bold: true
+      fontFamily: 微软雅黑
+      align: [left, middle]
+      wrap: false
+      text: ① 编辑器区 · 写代码的地方
+  - elementId: zone-editor-code
+    elementType: text
+    bounds: [90, 224, 290, 160]
+    content:
+      fontSize: 12
+      color: "$muted"
+      fontFamily: Consolas
+      lineHeight: 1.8
+      align: [left, top]
+      text: |
+        <p>name = input("你叫什么？")</p>
+        <p>print("你好", name)</p>
+        <p><span style="color:$cyan"># Tab → AI 自动补全下一行</span></p>
+        <p>score = 0</p>
+        <p>while score &lt; 10:</p>
+  - elementId: zone-chat
+    elementType: shape
+    bounds: [404, 182, 188, 130]
+    shapeName: rect
+    fill: {type: solid, color: "$panel"}
+    border: {style: solid, width: 1, color: "$accent"}
+  - elementId: zone-chat-label
+    elementType: text
+    bounds: [416, 192, 170, 40]
+    content:
+      fontSize: 13
+      color: "$accent"
+      bold: true
+      fontFamily: 微软雅黑
+      lineHeight: 1.3
+      align: [left, top]
+      text: |
+        <p>② Chat 区</p>
+        <p><span style="color:$muted; font-size:11px">随时问 AI 问题</span></p>
+  - elementId: zone-builder
+    elementType: shape
+    bounds: [404, 326, 188, 130]
+    shapeName: rect
+    fill: {type: solid, color: "$panel"}
+    border: {style: solid, width: 1, color: "$accent"}
+  - elementId: zone-builder-label
+    elementType: text
+    bounds: [416, 336, 170, 60]
+    content:
+      fontSize: 13
+      color: "$accent"
+      bold: true
+      fontFamily: 微软雅黑
+      lineHeight: 1.3
+      align: [left, top]
+      text: |
+        <p>③ Builder 区</p>
+        <p><span style="color:$muted; font-size:11px">一句话生成整个项目</span></p>
+  - elementId: right-h1
+    elementType: text
+    bounds: [640, 140, 256, 26]
+    content:
+      style: "$heading"
+      fontSize: 16
+      align: [left, middle]
+      wrap: false
+      text: 为什么选择 Trae？
+  - elementId: right-body
+    elementType: text
+    bounds: [640, 172, 256, 240]
+    content:
+      style: "$body"
+      align: [left, top]
+      text: |
+        <p>· 国产 AI IDE，中文界面、中文对话</p>
+        <p>· 代码补全开箱即用</p>
+        <p>· Chat / Builder 双模式，正好对应课程两大技能</p>
+        <p>· 支持 Python 与网页项目，一门课不用换工具</p>
+  - elementId: right-note-line
+    elementType: shape
+    bounds: [640, 424, 256, 1]
+    shapeName: rect
+    fill: {type: solid, color: "$line"}
+  - elementId: right-note
+    elementType: text
+    bounds: [640, 434, 256, 40]
+    content:
+      style: "$small"
+      lineHeight: 1.4
+      align: [left, top]
+      text: |
+        <p>提示：第一课先带学生熟悉三个区的位置，后面每课都会用到。</p>
+  - elementId: pagenum
+    elementType: text
+    bounds: [860, 500, 64, 20]
+    content:
+      style: "$small"
+      align: [right, middle]
+      wrap: false
+      text: 05 / 15

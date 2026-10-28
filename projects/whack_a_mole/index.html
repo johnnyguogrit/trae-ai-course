@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8"> <!-- 声明 UTF-8 编码，防止中文乱码 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>打地鼠</title>
+    <link rel="stylesheet" href="style.css"> <!-- 引入样式文件 -->
+</head>
+<body>
+
+    <h1>🔨 打地鼠</h1>
+
+    <!-- 分数和倒计时显示区 -->
+    <div class="info">
+        <span>得分：<b id="score">0</b></span>
+        <span>剩余时间：<b id="time">30</b> 秒</span>
+    </div>
+
+    <!-- 游戏区：JS 会自动生成 9 个洞放进这里 -->
+    <div id="game" class="game-board"></div>
+
+    <button id="startBtn">开始游戏</button>
+
+    <!-- 游戏结束后的结算面板（默认隐藏） -->
+    <div id="gameOver" class="game-over hidden">
+        <h2>⏰ 时间到！</h2>
+        <p>你的最终得分：<b id="finalScore">0</b></p>
+        <button id="restartBtn">重新开始</button>
+    </div>
+
+    <!-- script 放在 body 末尾，等页面元素加载完再执行 -->
+    <script src="script.js"></script>
+</body>
+</html>

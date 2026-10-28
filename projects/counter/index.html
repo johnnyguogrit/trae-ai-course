@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8"> <!-- 声明 UTF-8 编码，防止中文乱码 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>点击计数器 + 变色按钮</title>
+    <style>
+        /* CSS 写在 style 标签里，方便一节课看懂 */
+        body {
+            font-family: "Microsoft YaHei", sans-serif;
+            text-align: center;              /* 所有内容居中 */
+            padding-top: 80px;
+            background: #f5f7fa;             /* 【改这里】初始背景色 */
+            transition: background 0.5s;     /* 背景变色时平滑过渡 0.5 秒 */
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        /* 大数字显示区 */
+        #num {
+            font-size: 96px;                 /* 超大字号 */
+            font-weight: bold;
+            color: #4a6cf7;                  /* 【改这里】数字颜色 */
+            margin: 20px 0;
+        }
+
+        /* 按钮通用样式 */
+        button {
+            font-size: 20px;
+            padding: 12px 32px;
+            margin: 0 8px;
+            border: none;
+            border-radius: 12px;             /* 圆角按钮 */
+            cursor: pointer;                 /* 鼠标放上去变"小手" */
+            color: #fff;
+            transition: transform 0.1s;
+        }
+
+        button:active {
+            transform: scale(0.95);          /* 按下时稍微缩小，有手感 */
+        }
+
+        #addBtn { background: #4a6cf7; }     /* 蓝色：加一按钮 */
+        #resetBtn { background: #95a5a6; }   /* 灰色：重置按钮 */
+        #colorBtn { background: #e67e22; }   /* 橙色：变色按钮 */
+    </style>
+</head>
+<body>
+
+    <h1>👆 点击计数器</h1>
+
+    <!-- id 是标签的"身份证号"，JS 靠它抓取元素 -->
+    <div id="num">0</div>
+
+    <button id="addBtn">点我 +1</button>
+    <button id="resetBtn">重置</button>
+    <button id="colorBtn">🎨 随机变色</button>
+
+    <!-- script 标签放在 body 末尾：等按钮都加载好了再运行 JS -->
+    <script src="script.js"></script>
+</body>
+</html>

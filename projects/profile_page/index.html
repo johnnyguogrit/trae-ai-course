@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8"> <!-- 声明 UTF-8 编码，防止中文乱码 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人主页</title>
+    <!-- 引入外部 CSS 文件（和本文件放在同一文件夹） -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ========== 顶部导航栏 ========== -->
+    <nav class="navbar">
+        <!-- 【改这里】把"小明"换成你的名字 -->
+        <span class="logo">🌟 小明的主页</span>
+        <div class="nav-links">
+            <a href="#about">关于我</a>
+            <a href="#hobbies">我的爱好</a>
+            <a href="#contact">联系我</a>
+        </div>
+    </nav>
+
+    <!-- ========== 第一屏：名片区 ========== -->
+    <header class="hero">
+        <!-- 【改这里】seed 后面的单词换成你的英文名，头像就会变 -->
+        <img class="avatar" src="https://api.dicebear.com/9.x/adventurer/svg?seed=Felix" alt="我的头像">
+        <!-- 【改这里】名字和座右铭 -->
+        <h1>你好，我是小明</h1>
+        <p class="motto">"代码改变世界，好奇心改变我。"</p>
+    </header>
+
+    <!-- ========== 关于我 ========== -->
+    <section id="about" class="card">
+        <h2>👋 关于我</h2>
+        <!-- 【改这里】写三段你自己的介绍 -->
+        <p>我是一名初中生，正在学习 AI 协同编程。</p>
+        <p>我最喜欢的科目是数学，因为它和编程一样讲逻辑。</p>
+        <p>我的梦想是做出一个大家都爱用的小游戏。</p>
+    </section>
+
+    <!-- ========== 我的爱好 ========== -->
+    <section id="hobbies" class="card">
+        <h2>🎨 我的爱好</h2>
+        <!-- ul 是无序列表，li 是列表里的每一项 -->
+        <!-- 【改这里】换成你自己的爱好 -->
+        <ul class="hobby-list">
+            <li>🏀 打篮球</li>
+            <li>🎮 玩游戏（现在还能自己做游戏了！）</li>
+            <li>📚 看科幻小说</li>
+            <li>🎵 听音乐</li>
+        </ul>
+    </section>
+
+    <!-- ========== 联系方式 ========== -->
+    <section id="contact" class="card">
+        <h2>📮 联系我</h2>
+        <!-- 【改这里】换成你自己的邮箱（或者删掉这一段） -->
+        <p>邮箱：<a href="mailto:xiaoming@example.com">xiaoming@example.com</a></p>
+    </section>
+
+    <!-- ========== 页脚 ========== -->
+    <footer class="footer">
+        <!-- 【改这里】改成你的名字和年份 -->
+        <p>© 2025 小明 · 用 Trae 和 AI 一起做的第一个主页</p>
+    </footer>
+
+</body>
+</html>

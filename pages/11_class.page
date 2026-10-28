@@ -1,0 +1,207 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: kicker
+    elementType: text
+    bounds: [64, 36, 300, 20]
+    content:
+      style: "$kicker"
+      align: [left, middle]
+      wrap: false
+      text: CLASS FLOW
+  - elementId: title
+    elementType: text
+    bounds: [64, 60, 700, 44]
+    content:
+      style: "$title"
+      align: [left, middle]
+      wrap: false
+      text: 一堂课怎么上：四步节奏
+  - elementId: title-line
+    elementType: shape
+    bounds: [64, 112, 832, 1]
+    shapeName: rect
+    fill: {type: solid, color: "$line"}
+  - elementId: step1-num
+    elementType: text
+    bounds: [64, 146, 190, 40]
+    content:
+      fontSize: 28
+      color: "$accent"
+      bold: true
+      fontFamily: 微软雅黑
+      align: [left, middle]
+      wrap: false
+      text: "1"
+  - elementId: step1-title
+    elementType: text
+    bounds: [96, 148, 160, 36]
+    content:
+      fontSize: 18
+      color: "$text"
+      bold: true
+      fontFamily: 微软雅黑
+      align: [left, middle]
+      wrap: false
+      text: 演示
+  - elementId: step1-body
+    elementType: text
+    bounds: [64, 192, 170, 100]
+    content:
+      style: "$body"
+      fontSize: 13
+      align: [left, top]
+      text: |
+        <p>教师现场演示，让 AI 写代码，学生看到完整过程。</p>
+  - elementId: arrow1
+    elementType: shape
+    bounds: [240, 158, 34, 18]
+    shapeName: rightArrow
+    fill: {type: solid, color: "$line"}
+  - elementId: step2-num
+    elementType: text
+    bounds: [282, 146, 40, 40]
+    content:
+      fontSize: 28
+      color: "$accent"
+      bold: true
+      fontFamily: 微软雅黑
+      align: [left, middle]
+      wrap: false
+      text: "2"
+  - elementId: step2-title
+    elementType: text
+    bounds: [314, 148, 160, 36]
+    content:
+      fontSize: 18
+      color: "$text"
+      bold: true
+      fontFamily: 微软雅黑
+      align: [left, middle]
+      wrap: false
+      text: 动手
+  - elementId: step2-body
+    elementType: text
+    bounds: [282, 192, 170, 100]
+    content:
+      style: "$body"
+      fontSize: 13
+      align: [left, top]
+      text: |
+        <p>学生跟着做，再做变式任务；教师巡视答疑。</p>
+  - elementId: arrow2
+    elementType: shape
+    bounds: [458, 158, 34, 18]
+    shapeName: rightArrow
+    fill: {type: solid, color: "$line"}
+  - elementId: step3-num
+    elementType: text
+    bounds: [500, 146, 40, 40]
+    content:
+      fontSize: 28
+      color: "$accent"
+      bold: true
+      fontFamily: 微软雅黑
+      align: [left, middle]
+      wrap: false
+      text: "3"
+  - elementId: step3-title
+    elementType: text
+    bounds: [532, 148, 170, 36]
+    content:
+      fontSize: 18
+      color: "$text"
+      bold: true
+      fontFamily: 微软雅黑
+      align: [left, middle]
+      wrap: false
+      text: 三次提示法
+  - elementId: step3-body
+    elementType: text
+    bounds: [500, 192, 170, 100]
+    content:
+      style: "$body"
+      fontSize: 13
+      align: [left, top]
+      text: |
+        <p>卡壳时：先自己想 → 问 AI 要提示 → 才看完整答案。</p>
+  - elementId: arrow3
+    elementType: shape
+    bounds: [676, 158, 34, 18]
+    shapeName: rightArrow
+    fill: {type: solid, color: "$line"}
+  - elementId: step4-num
+    elementType: text
+    bounds: [718, 146, 40, 40]
+    content:
+      fontSize: 28
+      color: "$accent"
+      bold: true
+      fontFamily: 微软雅黑
+      align: [left, middle]
+      wrap: false
+      text: "4"
+  - elementId: step4-title
+    elementType: text
+    bounds: [750, 148, 146, 36]
+    content:
+      fontSize: 18
+      color: "$text"
+      bold: true
+      fontFamily: 微软雅黑
+      align: [left, middle]
+      wrap: false
+      text: 展示
+  - elementId: step4-body
+    elementType: text
+    bounds: [718, 192, 178, 100]
+    content:
+      style: "$body"
+      fontSize: 13
+      align: [left, top]
+      text: |
+        <p>学生展示自己的作品，互相点评，教师总结。</p>
+  - elementId: flow-line
+    elementType: shape
+    bounds: [64, 312, 832, 1]
+    shapeName: rect
+    fill: {type: solid, color: "$line"}
+  - elementId: hint-panel
+    elementType: shape
+    bounds: [64, 332, 832, 158]
+    shapeName: roundRect
+    adjustments: [6000]
+    fill: {type: solid, color: "$panel"}
+  - elementId: hint-title
+    elementType: text
+    bounds: [92, 344, 400, 26]
+    content:
+      fontSize: 16
+      color: "$cyan"
+      bold: true
+      fontFamily: 微软雅黑
+      align: [left, middle]
+      wrap: false
+      text: 「三次提示法」详解
+  - elementId: hint-body
+    elementType: text
+    bounds: [92, 376, 776, 106]
+    content:
+      style: "$body"
+      fontSize: 13
+      lineHeight: 1.2
+      align: [left, top]
+      text: |
+        <p><span style="color:$accent">第 1 次</span>：自己思考 3 分钟，说出"我想让程序做什么、现在卡在哪"。</p>
+        <p><span style="color:$accent">第 2 次</span>：向 AI 要<span style="color:$text">提示而不是答案</span> —— "给我一点思路，别写完整代码"。</p>
+        <p><span style="color:$accent">第 3 次</span>：还不行才看完整代码，并要求 AI 逐行解释。</p>
+  - elementId: pagenum
+    elementType: text
+    bounds: [860, 500, 64, 20]
+    content:
+      style: "$small"
+      align: [right, middle]
+      wrap: false
+      text: 11 / 15

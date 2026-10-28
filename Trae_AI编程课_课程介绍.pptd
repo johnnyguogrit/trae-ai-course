@@ -1,0 +1,72 @@
+version: v2
+title: AI 协同编程课 · 课程介绍
+size: [960, 540]
+theme:
+  colors:
+    bg: "#0F141C"
+    panel: "#1B2430"
+    panel2: "#232E3D"
+    dark: "#0B1017"
+    line: "#2E3A4C"
+    text: "#E9EDF2"
+    muted: "#93A0B4"
+    accent: "#F5A623"
+    cyan: "#45C8E0"
+  textStyles:
+    kicker:
+      fontSize: 13
+      color: "$accent"
+      bold: true
+      letterSpacing: 2
+      fontFamily: 微软雅黑
+    title:
+      fontSize: 30
+      color: "$text"
+      bold: true
+      fontFamily: 微软雅黑
+    heading:
+      fontSize: 18
+      color: "$text"
+      bold: true
+      fontFamily: 微软雅黑
+    body:
+      fontSize: 14
+      color: "$muted"
+      lineHeight: 1.55
+      fontFamily: 微软雅黑
+    small:
+      fontSize: 11
+      color: "$muted"
+      fontFamily: 微软雅黑
+  tableStyles:
+    map:
+      cellStyle:
+        fontSize: 13
+        color: "$text"
+        fontFamily: 微软雅黑
+        align: [center, middle]
+        border: {style: solid, width: 1, color: "$line"}
+      firstRowStyle:
+        fill: {type: solid, color: "$panel2"}
+        color: "$accent"
+        bold: true
+        fontSize: 14
+      bodyStyles:
+        - {fill: {type: solid, color: "#161D28"}}
+        - {fill: {type: solid, color: "#121924"}}
+pages:
+  - pages/01_cover.page
+  - pages/02_why.page
+  - pages/03_philosophy.page
+  - pages/04_skills.page
+  - pages/05_trae.page
+  - pages/06_map.page
+  - pages/07_l12.page
+  - pages/08_l34.page
+  - pages/09_l56.page
+  - pages/10_l78.page
+  - pages/11_class.page
+  - pages/12_prompt.page
+  - pages/13_takeaway.page
+  - pages/14_teacher.page
+  - pages/15_final.page

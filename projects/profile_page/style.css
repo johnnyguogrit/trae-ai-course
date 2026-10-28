@@ -1,0 +1,127 @@
+/* ============================================
+   个人主页样式（第 5 课配套项目）
+   CSS 的作用：给 HTML 骨架穿上皮肤。
+   想改颜色？找到 # 开头的色值改掉它！
+   ============================================ */
+
+/* 全局设置：去掉默认边距，设置字体 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* 让宽度计算更直观 */
+}
+
+body {
+    /* 【改这里】换一组你喜欢的字体 */
+    font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+    background: #f0f4f8; /* 【改这里】页面背景色（浅灰蓝） */
+    color: #333;         /* 默认文字颜色（深灰） */
+    line-height: 1.8;    /* 行高，让文字不那么挤 */
+}
+
+/* ---------- 顶部导航栏 ---------- */
+.navbar {
+    background: #ffffff;
+    padding: 12px 40px;              /* 上下 12px，左右 40px 的内边距 */
+    display: flex;                   /* 弹性布局：让 logo 和链接排成一行 */
+    justify-content: space-between;  /* 两边对齐：logo 靠左，链接靠右 */
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); /* 轻微阴影，浮起来的感觉 */
+    position: sticky;  /* 吸顶：滚动时导航栏不动 */
+    top: 0;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4a6cf7; /* 【改这里】logo 颜色 */
+}
+
+.nav-links a {
+    margin-left: 24px;
+    text-decoration: none; /* 去掉链接下划线 */
+    color: #555;
+}
+
+.nav-links a:hover {
+    color: #4a6cf7; /* 鼠标悬停时变色 */
+}
+
+/* ---------- 第一屏：名片区 ---------- */
+.hero {
+    /* 渐变色背景：从左到右，蓝色到紫色 【改这里】 */
+    background: linear-gradient(135deg, #4a6cf7, #9b59f7);
+    text-align: center;       /* 文字居中 */
+    padding: 80px 20px;       /* 上下留白，显得大气 */
+    color: #ffffff;           /* 白色文字 */
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;               /* 50% 圆角 = 圆形头像 */
+    border: 4px solid #ffffff;        /* 白色描边 */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;       /* 动画过渡：变化过程用 0.3 秒 */
+}
+
+.avatar:hover {
+    transform: scale(1.1); /* 鼠标悬停时放大 10% */
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin: 20px 0 10px;
+}
+
+.motto {
+    font-size: 18px;
+    opacity: 0.9; /* 稍微透明一点，更有层次 */
+}
+
+/* ---------- 卡片区域（关于我 / 爱好 / 联系） ---------- */
+.card {
+    max-width: 720px;            /* 卡片最大宽度，太宽不好看 */
+    margin: 40px auto;           /* auto = 左右自动 = 水平居中 */
+    background: #ffffff;
+    border-radius: 16px;         /* 圆角 */
+    padding: 32px 40px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+.card h2 {
+    margin-bottom: 16px;
+    color: #4a6cf7;
+    border-bottom: 2px solid #eef1fb; /* 标题下面一条浅色分割线 */
+    padding-bottom: 8px;
+}
+
+.card p {
+    margin-bottom: 8px;
+}
+
+/* ---------- 爱好列表 ---------- */
+.hobby-list {
+    list-style: none; /* 去掉默认的圆点 */
+}
+
+.hobby-list li {
+    padding: 10px 16px;
+    margin-bottom: 8px;
+    background: #f6f8ff;        /* 每项一个浅色小底块 */
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+.hobby-list li:hover {
+    transform: translateX(8px); /* 悬停时向右滑一点 */
+    background: #e8edff;
+}
+
+/* ---------- 页脚 ---------- */
+.footer {
+    text-align: center;
+    padding: 24px;
+    color: #888;
+    font-size: 14px;
+}

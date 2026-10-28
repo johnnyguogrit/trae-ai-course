@@ -1,0 +1,59 @@
+pageType: final
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: cursor
+    elementType: text
+    bounds: [330, 150, 300, 40]
+    content:
+      fontSize: 26
+      color: "$accent"
+      fontFamily: Consolas
+      align: [center, middle]
+      wrap: false
+      text: ">_"
+  - elementId: big
+    elementType: text
+    bounds: [130, 200, 700, 80]
+    content:
+      fontSize: 56
+      color: "$text"
+      bold: true
+      fontFamily: 微软雅黑
+      align: [center, middle]
+      wrap: false
+      text: Let's Vibe Code!
+  - elementId: sub
+    elementType: text
+    bounds: [130, 296, 700, 30]
+    content:
+      fontSize: 20
+      color: "$cyan"
+      fontFamily: 微软雅黑
+      align: [center, middle]
+      wrap: false
+      text: 打开 Trae，写下你的第一行提示词
+  - elementId: accent-bar
+    elementType: shape
+    bounds: [444, 348, 72, 5]
+    shapeName: rect
+    fill: {type: solid, color: "$accent"}
+  - elementId: meta
+    elementType: text
+    bounds: [130, 372, 700, 24]
+    content:
+      fontSize: 14
+      color: "$muted"
+      fontFamily: 微软雅黑
+      align: [center, middle]
+      wrap: false
+      text: 第 1 课见：让电脑开口说话
+  - elementId: footer
+    elementType: text
+    bounds: [130, 470, 700, 22]
+    content:
+      style: "$small"
+      align: [center, middle]
+      wrap: false
+      text: AI 协同编程课 · 谢谢聆听

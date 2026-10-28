@@ -1,0 +1,78 @@
+pageType: cover
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: deco-code
+    elementType: text
+    bounds: [560, 90, 360, 300]
+    opacity: 0.5
+    content:
+      fontSize: 13
+      color: "$cyan"
+      fontFamily: Consolas
+      lineHeight: 1.9
+      align: [left, top]
+      text: |
+        <p>&gt; print("Hello, AI!")</p>
+        <p>&gt; def guess_number():</p>
+        <p>&gt; &lt;html&gt;我的主页&lt;/html&gt;</p>
+        <p>&gt; while True: learn()</p>
+        <p>&gt; // Vibe Coding ON</p>
+  - elementId: deco-line-v
+    elementType: shape
+    bounds: [500, 90, 1, 300]
+    shapeName: rect
+    fill: {type: solid, color: "$line"}
+  - elementId: kicker
+    elementType: text
+    bounds: [80, 120, 400, 24]
+    content:
+      style: "$kicker"
+      align: [left, middle]
+      wrap: false
+      text: 课程宣讲 · 开课第一课
+  - elementId: title
+    elementType: text
+    bounds: [80, 156, 500, 80]
+    content:
+      fontSize: 52
+      color: "$text"
+      bold: true
+      fontFamily: 微软雅黑
+      align: [left, middle]
+      wrap: false
+      text: AI 协同编程课
+  - elementId: subtitle
+    elementType: text
+    bounds: [80, 244, 460, 30]
+    content:
+      fontSize: 20
+      color: "$cyan"
+      fontFamily: 微软雅黑
+      align: [left, middle]
+      wrap: false
+      text: 用 Trae 学 Python / HTML / JavaScript
+  - elementId: accent-bar
+    elementType: shape
+    bounds: [80, 296, 72, 5]
+    shapeName: rect
+    fill: {type: solid, color: "$accent"}
+  - elementId: meta
+    elementType: text
+    bounds: [80, 322, 460, 26]
+    content:
+      fontSize: 15
+      color: "$muted"
+      fontFamily: 微软雅黑
+      align: [left, middle]
+      wrap: false
+      text: 8 次课 · 2 大 AI 技能 · 6+ 个项目作品
+  - elementId: footer
+    elementType: text
+    bounds: [80, 470, 500, 22]
+    content:
+      style: "$small"
+      align: [left, middle]
+      wrap: false
+      text: 面向教师与学生的课程介绍

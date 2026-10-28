@@ -1,0 +1,125 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: kicker
+    elementType: text
+    bounds: [64, 36, 300, 20]
+    content:
+      style: "$kicker"
+      align: [left, middle]
+      wrap: false
+      text: PROMPTING
+  - elementId: title
+    elementType: text
+    bounds: [64, 60, 760, 44]
+    content:
+      style: "$title"
+      align: [left, middle]
+      wrap: false
+      text: 提示词示例：把想法说清楚
+  - elementId: title-line
+    elementType: shape
+    bounds: [64, 112, 832, 1]
+    shapeName: rect
+    fill: {type: solid, color: "$line"}
+  - elementId: bad-label
+    elementType: text
+    bounds: [64, 134, 400, 24]
+    content:
+      fontSize: 15
+      color: "#E05C5C"
+      bold: true
+      fontFamily: 微软雅黑
+      align: [left, middle]
+      wrap: false
+      text: ✕ 坏提示词
+  - elementId: bad-panel
+    elementType: shape
+    bounds: [64, 164, 400, 120]
+    shapeName: roundRect
+    adjustments: [6000]
+    fill: {type: solid, color: "$panel"}
+    border: {style: solid, width: 1, color: "#E05C5C"}
+  - elementId: bad-text
+    elementType: text
+    bounds: [88, 178, 352, 92]
+    content:
+      fontSize: 15
+      color: "$text"
+      fontFamily: 微软雅黑
+      lineHeight: 1.5
+      align: [left, middle]
+      text: |
+        <p>"帮我做一个打地鼠游戏。"</p>
+        <p><span style="color:$muted; font-size:13px">—— 没有规则、没有界面要求，AI 只能瞎猜</span></p>
+  - elementId: good-label
+    elementType: text
+    bounds: [496, 134, 400, 24]
+    content:
+      fontSize: 15
+      color: "#6CBF6C"
+      bold: true
+      fontFamily: 微软雅黑
+      align: [left, middle]
+      wrap: false
+      text: ✓ 好提示词
+  - elementId: good-panel
+    elementType: shape
+    bounds: [496, 164, 400, 216]
+    shapeName: roundRect
+    adjustments: [6000]
+    fill: {type: solid, color: "$panel"}
+    border: {style: solid, width: 1, color: "#6CBF6C"}
+  - elementId: good-text
+    elementType: text
+    bounds: [520, 178, 352, 192]
+    content:
+      fontSize: 13
+      color: "$text"
+      fontFamily: 微软雅黑
+      lineHeight: 1.2
+      align: [left, top]
+      text: |
+        <p>"用 HTML + JavaScript 做一个打地鼠网页游戏：</p>
+        <p>· 3×3 格子，地鼠每 1 秒随机出现；</p>
+        <p>· 点中加 1 分，30 秒倒计时；</p>
+        <p>· 结束后显示总分和'再玩一次'按钮；</p>
+        <p>· 深色背景、大按钮，适合初中生。"</p>
+  - elementId: formula-line
+    elementType: shape
+    bounds: [64, 380, 832, 1]
+    shapeName: rect
+    fill: {type: solid, color: "$line"}
+  - elementId: formula-title
+    elementType: text
+    bounds: [64, 396, 832, 26]
+    content:
+      fontSize: 16
+      color: "$accent"
+      bold: true
+      fontFamily: 微软雅黑
+      align: [left, middle]
+      wrap: false
+      text: 好提示词公式
+  - elementId: formula-body
+    elementType: text
+    bounds: [64, 428, 832, 56]
+    content:
+      fontSize: 15
+      color: "$text"
+      fontFamily: 微软雅黑
+      lineHeight: 1.6
+      align: [left, top]
+      text: |
+        <p>目标（做什么） + 规则（怎么玩） + 界面（长什么样） + 细节（数值、按钮）</p>
+        <p><span style="color:$muted; font-size:13px">课堂练习：让学生先把想法写在纸上，再交给 Trae 的 Builder 生成。</span></p>
+  - elementId: pagenum
+    elementType: text
+    bounds: [860, 500, 64, 20]
+    content:
+      style: "$small"
+      align: [right, middle]
+      wrap: false
+      text: 12 / 15

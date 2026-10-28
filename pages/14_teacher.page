@@ -1,0 +1,156 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: kicker
+    elementType: text
+    bounds: [64, 36, 300, 20]
+    content:
+      style: "$kicker"
+      align: [left, middle]
+      wrap: false
+      text: FOR TEACHERS
+  - elementId: title
+    elementType: text
+    bounds: [64, 60, 700, 44]
+    content:
+      style: "$title"
+      align: [left, middle]
+      wrap: false
+      text: 给教师的开课清单
+  - elementId: title-line
+    elementType: shape
+    bounds: [64, 112, 832, 1]
+    shapeName: rect
+    fill: {type: solid, color: "$line"}
+  - elementId: c1-icon
+    elementType: icon
+    bounds: [64, 140, 26, 26]
+    iconName: "fas:laptop"
+    fill: {type: solid, color: "$accent"}
+  - elementId: c1-title
+    elementType: text
+    bounds: [102, 138, 300, 30]
+    content:
+      style: "$heading"
+      fontSize: 17
+      align: [left, middle]
+      wrap: false
+      text: 环境准备（开课前 1 周）
+  - elementId: c1-body
+    elementType: text
+    bounds: [102, 174, 346, 130]
+    content:
+      style: "$body"
+      fontSize: 13
+      align: [left, top]
+      text: |
+        <p>· 每台电脑安装 Trae 并注册账号</p>
+        <p>· 安装 Python 3，跑通 hello.py</p>
+        <p>· 检查机房网络能否正常使用 AI 功能</p>
+        <p>· 准备离线备用方案（安装包、示例代码 U 盘）</p>
+  - elementId: c1-line
+    elementType: shape
+    bounds: [64, 132, 384, 1]
+    shapeName: rect
+    fill: {type: solid, color: "$line"}
+  - elementId: c2-icon
+    elementType: icon
+    bounds: [512, 140, 26, 26]
+    iconName: "fas:calendar-check"
+    fill: {type: solid, color: "$accent"}
+  - elementId: c2-title
+    elementType: text
+    bounds: [550, 138, 300, 30]
+    content:
+      style: "$heading"
+      fontSize: 17
+      align: [left, middle]
+      wrap: false
+      text: 课时安排
+  - elementId: c2-body
+    elementType: text
+    bounds: [550, 174, 346, 130]
+    content:
+      style: "$body"
+      fontSize: 13
+      align: [left, top]
+      text: |
+        <p>· 8 次课，每次 45-90 分钟可调</p>
+        <p>· 建议节奏：演示 10′ → 动手 25′ → 展示 10′</p>
+        <p>· 第 4 课后可安排一次家长开放展示</p>
+        <p>· 第 8 课预留整节做项目路演</p>
+  - elementId: c2-line
+    elementType: shape
+    bounds: [512, 132, 384, 1]
+    shapeName: rect
+    fill: {type: solid, color: "$line"}
+  - elementId: c3-icon
+    elementType: icon
+    bounds: [64, 336, 26, 26]
+    iconName: "fas:star-half-stroke"
+    fill: {type: solid, color: "$cyan"}
+  - elementId: c3-title
+    elementType: text
+    bounds: [102, 334, 300, 30]
+    content:
+      style: "$heading"
+      fontSize: 17
+      align: [left, middle]
+      wrap: false
+      text: 评价方式
+  - elementId: c3-body
+    elementType: text
+    bounds: [102, 370, 346, 110]
+    content:
+      style: "$body"
+      fontSize: 13
+      align: [left, top]
+      text: |
+        <p>· 过程性评价：每课作品完成度</p>
+        <p>· 提示词质量纳入评价（清晰、有细节）</p>
+        <p>· 不考语法默写，考"能不能做出来"</p>
+  - elementId: c3-line
+    elementType: shape
+    bounds: [64, 328, 384, 1]
+    shapeName: rect
+    fill: {type: solid, color: "$line"}
+  - elementId: c4-icon
+    elementType: icon
+    bounds: [512, 336, 26, 26]
+    iconName: "fas:circle-question"
+    fill: {type: solid, color: "$cyan"}
+  - elementId: c4-title
+    elementType: text
+    bounds: [550, 334, 300, 30]
+    content:
+      style: "$heading"
+      fontSize: 17
+      align: [left, middle]
+      wrap: false
+      text: 常见问题预案
+  - elementId: c4-body
+    elementType: text
+    bounds: [550, 370, 346, 110]
+    content:
+      style: "$body"
+      fontSize: 13
+      align: [left, top]
+      text: |
+        <p>· AI 生成失败 → 换个说法再试一次</p>
+        <p>· 学生直接抄 AI 答案 → 用"三次提示法"引导</p>
+        <p>· 进度差异大 → 快的学生加扩展任务</p>
+  - elementId: c4-line
+    elementType: shape
+    bounds: [512, 328, 384, 1]
+    shapeName: rect
+    fill: {type: solid, color: "$line"}
+  - elementId: pagenum
+    elementType: text
+    bounds: [860, 500, 64, 20]
+    content:
+      style: "$small"
+      align: [right, middle]
+      wrap: false
+      text: 14 / 15

@@ -1,0 +1,293 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 5.9% 10%;
+    --radius: 0.625rem;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+/* ========== 中文阅读排版 ========== */
+
+@layer base {
+  body {
+    font-family:
+      -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+      'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans SC', 'Helvetica Neue',
+      Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+}
+
+/* 讲义 Markdown 正文 */
+.md-body {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #334155;
+  overflow-wrap: break-word;
+}
+
+@media (max-width: 640px) {
+  .md-body {
+    font-size: 16px;
+  }
+}
+
+.md-body > :first-child {
+  margin-top: 0;
+}
+
+.md-body h1 {
+  font-size: 1.9rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  color: #0f172a;
+  margin: 0 0 1.2rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid #e2e8f0;
+  line-height: 1.35;
+}
+
+.md-body h2 {
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 2.6rem 0 1rem;
+  padding-left: 0.75rem;
+  border-left: 4px solid #6366f1;
+  line-height: 1.4;
+}
+
+.md-body h3 {
+  font-size: 1.18rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 2rem 0 0.75rem;
+  line-height: 1.45;
+}
+
+.md-body h4 {
+  font-size: 1.02rem;
+  font-weight: 700;
+  color: #334155;
+  margin: 1.6rem 0 0.6rem;
+}
+
+.md-body p {
+  margin: 1rem 0;
+}
+
+.md-body strong {
+  color: #0f172a;
+  font-weight: 700;
+}
+
+.md-body a {
+  color: #4f46e5;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: #c7d2fe;
+}
+.md-body a:hover {
+  text-decoration-color: #4f46e5;
+}
+
+.md-body ul,
+.md-body ol {
+  margin: 1rem 0;
+  padding-left: 1.6rem;
+}
+.md-body ul {
+  list-style: disc;
+}
+.md-body ol {
+  list-style: decimal;
+}
+.md-body li {
+  margin: 0.35rem 0;
+}
+.md-body li::marker {
+  color: #818cf8;
+}
+.md-body li > ul,
+.md-body li > ol {
+  margin: 0.35rem 0;
+}
+
+.md-body hr {
+  border: 0;
+  border-top: 1px solid #e2e8f0;
+  margin: 2.4rem 0;
+}
+
+/* 行内代码 */
+.md-body code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Cascadia Mono',
+    'Courier New', monospace;
+  font-size: 0.86em;
+  background: #eef2ff;
+  color: #4338ca;
+  padding: 0.15em 0.4em;
+  border-radius: 5px;
+}
+
+/* 代码块：深色底 + 横向滚动 */
+.md-body pre {
+  background: #0f172a;
+  color: #e2e8f0;
+  border-radius: 12px;
+  padding: 1rem 1.2rem;
+  margin: 1.4rem 0;
+  overflow-x: auto;
+  font-size: 0.88rem;
+  line-height: 1.65;
+  box-shadow: 0 1px 2px rgb(15 23 42 / 0.15);
+}
+.md-body pre code {
+  background: transparent;
+  color: inherit;
+  padding: 0;
+  border-radius: 0;
+  font-size: inherit;
+  white-space: pre;
+}
+
+/* 提示词示例 / 提示框：彩色 callout */
+.md-body blockquote {
+  margin: 1.5rem 0;
+  padding: 1rem 1.2rem;
+  background: linear-gradient(135deg, #eef2ff 0%, #f5f3ff 100%);
+  border: 1px solid #e0e7ff;
+  border-left: 4px solid #6366f1;
+  border-radius: 0 12px 12px 0;
+  color: #3730a3;
+}
+.md-body blockquote p {
+  margin: 0.4rem 0;
+}
+.md-body blockquote > :first-child {
+  margin-top: 0;
+}
+.md-body blockquote > :last-child {
+  margin-bottom: 0;
+}
+.md-body blockquote code {
+  background: rgb(255 255 255 / 0.7);
+  color: #4338ca;
+}
+.md-body blockquote pre {
+  background: #1e1b4b;
+  box-shadow: none;
+}
+
+/* 表格：边框 + 斑马纹 + 横向滚动 */
+.md-table-wrap {
+  margin: 1.4rem 0;
+  overflow-x: auto;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+}
+.md-body table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+.md-body thead th {
+  background: #f1f5f9;
+  color: #0f172a;
+  font-weight: 700;
+  text-align: left;
+  padding: 0.65rem 0.9rem;
+  border-bottom: 2px solid #e2e8f0;
+  white-space: nowrap;
+}
+.md-body tbody td {
+  padding: 0.6rem 0.9rem;
+  border-bottom: 1px solid #f1f5f9;
+  vertical-align: top;
+}
+.md-body tbody tr:nth-child(even) {
+  background: #f8fafc;
+}
+.md-body tbody tr:hover {
+  background: #eef2ff;
+}
+.md-body tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+/* 图片 */
+.md-body img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin: 1rem auto;
+  display: block;
+}

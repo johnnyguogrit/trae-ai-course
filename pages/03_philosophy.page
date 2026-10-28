@@ -1,0 +1,120 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: kicker
+    elementType: text
+    bounds: [64, 36, 300, 20]
+    content:
+      style: "$kicker"
+      align: [left, middle]
+      wrap: false
+      text: DESIGN
+  - elementId: title
+    elementType: text
+    bounds: [64, 60, 760, 44]
+    content:
+      style: "$title"
+      align: [left, middle]
+      wrap: false
+      text: 课程设计理念：小步子、即学即练、AI 结对
+  - elementId: title-line
+    elementType: shape
+    bounds: [64, 112, 832, 1]
+    shapeName: rect
+    fill: {type: solid, color: "$line"}
+  - elementId: ref-text
+    elementType: text
+    bounds: [64, 126, 832, 40]
+    content:
+      style: "$body"
+      align: [left, middle]
+      text: |
+        <p>设计参考吴恩达（Andrew Ng）"Learn Python with AI" 系列课程：零基础友好，让 AI 全程当学生的编程搭档。</p>
+  - elementId: card1-icon
+    elementType: icon
+    bounds: [64, 196, 34, 34]
+    iconName: "fas:shoe-prints"
+    fill: {type: solid, color: "$accent"}
+  - elementId: card1-title
+    elementType: text
+    bounds: [112, 190, 300, 28]
+    content:
+      style: "$heading"
+      align: [left, middle]
+      wrap: false
+      text: 小步子
+  - elementId: card1-body
+    elementType: text
+    bounds: [112, 224, 330, 96]
+    content:
+      style: "$body"
+      align: [left, top]
+      text: |
+        <p>每次课只引入 1-2 个新概念，其余交给 AI。先会用，再慢慢懂原理。</p>
+  - elementId: card1-line
+    elementType: shape
+    bounds: [64, 180, 384, 2]
+    shapeName: rect
+    fill: {type: solid, color: "$accent"}
+  - elementId: card2-icon
+    elementType: icon
+    bounds: [520, 196, 34, 34]
+    iconName: "fas:keyboard"
+    fill: {type: solid, color: "$accent"}
+  - elementId: card2-title
+    elementType: text
+    bounds: [568, 190, 300, 28]
+    content:
+      style: "$heading"
+      align: [left, middle]
+      wrap: false
+      text: 即学即练
+  - elementId: card2-body
+    elementType: text
+    bounds: [568, 224, 328, 96]
+    content:
+      style: "$body"
+      align: [left, top]
+      text: |
+        <p>讲 10 分钟就动手 25 分钟。每节课都产出一个能运行的小项目，当场看到成果。</p>
+  - elementId: card2-line
+    elementType: shape
+    bounds: [520, 180, 376, 2]
+    shapeName: rect
+    fill: {type: solid, color: "$accent"}
+  - elementId: card3-icon
+    elementType: icon
+    bounds: [64, 356, 34, 34]
+    iconName: "fas:robot"
+    fill: {type: solid, color: "$cyan"}
+  - elementId: card3-title
+    elementType: text
+    bounds: [112, 350, 300, 28]
+    content:
+      style: "$heading"
+      align: [left, middle]
+      wrap: false
+      text: AI 结对编程
+  - elementId: card3-body
+    elementType: text
+    bounds: [112, 384, 784, 70]
+    content:
+      style: "$body"
+      align: [left, top]
+      text: |
+        <p>AI 不是答案机器，而是"同桌"：学生负责提想法、做判断、验收结果；AI 负责补全、解释、生成。遇到报错先问 AI，再问老师。</p>
+  - elementId: card3-line
+    elementType: shape
+    bounds: [64, 340, 832, 2]
+    shapeName: rect
+    fill: {type: solid, color: "$cyan"}
+  - elementId: pagenum
+    elementType: text
+    bounds: [860, 500, 64, 20]
+    content:
+      style: "$small"
+      align: [right, middle]
+      wrap: false
+      text: 03 / 15

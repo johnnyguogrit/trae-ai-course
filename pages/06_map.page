@@ -1,0 +1,77 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: kicker
+    elementType: text
+    bounds: [64, 36, 300, 20]
+    content:
+      style: "$kicker"
+      align: [left, middle]
+      wrap: false
+      text: SYLLABUS
+  - elementId: title
+    elementType: text
+    bounds: [64, 60, 700, 44]
+    content:
+      style: "$title"
+      align: [left, middle]
+      wrap: false
+      text: 课程地图：8 课总览
+  - elementId: title-line
+    elementType: shape
+    bounds: [64, 112, 832, 1]
+    shapeName: rect
+    fill: {type: solid, color: "$line"}
+  - elementId: map-table
+    elementType: table
+    bounds: [64, 132, 832, 340]
+    columnWidths: [0.1, 0.2, 0.42, 0.28]
+    rowHeights: [0.12, 0.11, 0.11, 0.11, 0.11, 0.11, 0.11, 0.11, 0.11]
+    style: "$map"
+    rows:
+      - - text: 课次
+        - text: 语言
+        - text: 主题
+        - text: 产出项目
+      - - text: 第 1 课
+        - text: Python
+        - text: 你好，Python！变量与输出
+        - text: 自我介绍程序
+      - - text: 第 2 课
+        - text: Python
+        - text: 输入与简单逻辑
+        - text: AI 聊天机器人
+      - - text: 第 3 课
+        - text: Python
+        - text: 循环与随机数
+        - text: 猜数字游戏
+      - - text: 第 4 课
+        - text: Python
+        - text: Vibe Coding 初体验
+        - text: 单词消消乐
+      - - text: 第 5 课
+        - text: HTML
+        - text: 网页结构与样式
+        - text: 我的个人主页
+      - - text: 第 6 课
+        - text: JavaScript
+        - text: 按钮、事件与交互
+        - text: 会动的交互页面
+      - - text: 第 7 课
+        - text: JavaScript
+        - text: 计时与碰撞逻辑
+        - text: 打地鼠游戏
+      - - text: 第 8 课
+        - text: 综合
+        - text: 项目制创作 + 路演
+        - text: 综合大项目
+  - elementId: pagenum
+    elementType: text
+    bounds: [860, 500, 64, 20]
+    content:
+      style: "$small"
+      align: [right, middle]
+      wrap: false
+      text: 06 / 15
